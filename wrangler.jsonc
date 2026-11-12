@@ -1,8 +1,13 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "illusive-ninja",
-  "main": "src/Illusive_Ninja.pdf",
-  "compatibility_date": "2026-11-12",
-  "assets": {
-    "directory": "./"
-  }
+  "main": "/index.ts",
+  "compatibility_date": "2026-01-01",
+  "rules": [
+    {
+      "type": "Data",
+      "globs": ["**/*.pdf"],
+      "fallthrough": true
+    }
+  ]
 }
